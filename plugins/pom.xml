@@ -26,6 +26,10 @@
 		<tycho.version>1.1.0</tycho.version>
 	</properties>
 
+  <scm>
+    <developerConnection>scm:git:git@github.com:dofs197/runawfe-devstudio.git</developerConnection>
+  </scm>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -104,6 +108,11 @@
 				<configuration>
 					<format>'M'yyyyMMdd-HHmm</format>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
 			</plugin>
 		</plugins>
 	</build>
